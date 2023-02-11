@@ -19,7 +19,7 @@ function submitForm(){
 
 function postMethod(data){
     let xhr = new XMLHttpRequest();
-            let url = "https://uran.guru";
+            let url = "https://web.programmierung";
        
             // open a connection
             xhr.open("POST", url, true);
