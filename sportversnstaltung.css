@@ -1,0 +1,43 @@
+body{
+    background-color: cornflowerblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    color: wheat;
+    font-size: xxx-large;
+    font-style: normal;
+    text-align: center;
+    margin: 1cm;
+    margin-bottom: 0cm;
+}
+
+p{
+    color:black;
+    font-size: large;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+}
+legend{
+    background-color:azure ;
+    float: left;
+    padding: 0.2em 1.5em;
+    border-bottom-right-radius: 1em;
+
+}
+.btn-outline-primary{    
+    background-color:azure ;
+}
+.form-btn{    
+    margin: 1cm;
+    padding: 0cm;
+}
+fieldset{
+    color: black;
+    font-size: medium;
+    font-style: normal;
+    margin: 1cm;
+    padding: 0cm;
+}
+
+

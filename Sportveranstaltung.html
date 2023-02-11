@@ -1,0 +1,92 @@
+<html> 
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         
+        <script src="sportveranstaltung.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <title>
+            Anmeldung zum Tauchkurs
+        </title>
+    </head>
+    <body class="container">
+        <div class="row">
+            <div class="col-3"><img width="40%" src="ssi.png" /></div>
+            <h1 class="col-5">
+                Anmeldung zum Tauchkurs
+            </h1>            
+            <div class="col-3"><img width="110%" src="tauchschop.webp" width="50%"/></div>
+        </div>
+        <div class="row">
+            <p>Als Taucher siehst du Welt mit anderen Augen! Du lernst eine friedliche Unterwasserwelt voll 
+                bunter Meeresbewohner und atemberaubender Landschaften kennen.<br/> Tauchen ist ein unglaubliches, 
+                lebenslanges Abenteuer und ein sicherer Funsport für die ganze Familie, denn Kinder können schon 
+                ab 10 Jahren daran teilnehmen. <br/> Tauchen zu lernen ist viel einfacher als du denkst, und die beste 
+                Methode ist mit dem weltweit anerkannten Open Water Diver Programm zu starten. </p>
+            <p>Bitte füllen Sie das Formular aus, um sich für einen Tauchkurs anzumelden!</p>
+        </div>
+        <form>
+            <fieldset>
+                <legend class="row">
+                    <b>Persönliche Daten</b>
+                </legend>
+                <div class="row">
+                    <div class="col-2">Vorname:</div> 
+                    <input class="col-6" type="text" name="first" required id="first"/>
+                </div>
+                <div class="row">
+                    <div class="col-2">Nachname:</div> 
+                    <input class="col-6" type="text" name="last" required id="last"/>
+                </div>
+                <div class="row">
+                    <div class="col-2">Geburtsdatum:</div> 
+                    <input class="col-6" type="date" name="birth" required id="birth" />
+                </div>
+                <div class="row">
+                    <div class="col-2">Straße/Hausnummer:</div> 
+                    <input class="col-6" type="text" name="street" required id="street"/>
+                </div>
+                <div class="row">
+                    <div class="col-2">PLZ/Ort:</div> 
+                     <input class="col-6" type="text" name="plz" required id="plz"/>
+                </div>
+                <div class="row">
+                    <div class="col-2">Email-Adresse:</div> 
+                    <input class="col-6" type="email" name="mail" required id="mail"/>
+                </div>
+                <div class="row">
+                    <div class="col-2">Telefonnummer:</div> 
+                    <input class="col-6" type="tel" name="phonenumber" required id="phonenumber"/>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <b>Kursauswahl</b>
+                </legend>
+                <input type="checkbox" name="course" value="owd"/> Open Water Diver<br/>
+                <input type="checkbox" name="course" value="pb"/> Perfect Buoyancy<br/>
+                <input type="checkbox" name="course" value="deep"/> Deep Diving<br/>
+                <input type="checkbox" name="course" value="wreck"/> Wreck Diving<br/>
+                <input type="checkbox" name="course" value="nitrox"/> Enriched Air Nitrox<br/>
+            </fieldset>
+            <fieldset>
+                <legend> <b> Kursort </b></legend>
+                <input type="radio" name="place" value="millstatt"/> Millstätter See<br/>
+                <input type="radio" name="place" value="selce"/> Selce (Kroatien)<br/>
+                <input type="radio" name="place" value="malta"/> St. Paul's Bay (Malta)<br/>
+                <input type="radio" name="place" value="egypt"/> Abu Dabbab (Ägypten) <br/>
+            </fieldset>
+            <fieldset>
+                <legend> <b> Dokumente </b></legend>
+                <input type="file" name="ttu" /> Tauchtauglichkeitsuntersuchung hochladen<br/>
+                <input type="checkbox" name="haftungsausschluss" required/>Hiermit akzeptiere ich, 
+                dass ich alleine für mögliche Verletzungen und Sachschäden verantwortlich bin und das Tauchcenter nicht haftbar gemacht werden kann.<br/>
+            </fieldset>
+            <div class="form-btn">
+                <input class="btn btn-outline-primary" type="button" value="Formular abschicken" onClick="submitForm()" />
+                <input class="btn btn-outline-primary" type="reset" value="Formular zurücksetzten" />
+            </div>
+        </form>
+    </body>
+</html>
